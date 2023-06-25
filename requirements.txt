@@ -3,3 +3,4 @@ numpy
 scikit-sparse 
 scikit-umfpack 
 memory_profiler
+black
