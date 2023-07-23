@@ -14,7 +14,7 @@ def sparse_solve(A, b):
     x = spsolve(A, b)
     stop = time.perf_counter()
     fntime = stop - start
-    erel = norm(x - xe, ord=2) / norm(xe, ord=2)
+    erel = norm(x - xe) / norm(xe)
 
     return fntime, erel
 
