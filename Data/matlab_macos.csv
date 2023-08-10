@@ -1,0 +1,5 @@
+Software,Sistema,Matrice,Errore Relativo,Tempo Esecuzione (sec),Memoria (MB)
+MATLAB,MacOS,cfd1.mat,2.79762e-13,6.38,1271.11
+MATLAB,MacOS,cfd2.mat,8.67099e-13,16.44,2484.20
+MATLAB,MacOS,ex15.mat,9.01879e-07,0.04,7.53
+MATLAB,MacOS,shallow_water1.mat,3.08894e-16,2.30,366.15
