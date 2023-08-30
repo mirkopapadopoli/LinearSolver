@@ -1,17 +1,17 @@
 % pulisco variabili
 clear;
 
-result_file = fopen('matlab_macos.csv', 'a');
+result_file = fopen('matlab_windows.csv', 'a');
 fprintf(result_file,'Software,Sistema,Matrice,Errore Relativo,Tempo Esecuzione (sec),Memoria (MB)\n');
 
-data_path = '/Users/mirkopapadopoli/Code/LinearSolver/MatrixMAT/';
+data_path = 'C:/Users/papad/Code/LinearSolver/Test/cfd1';
 file_dir = dir(fullfile(data_path, '*.mat'));
 
-for i = 1:length(file_dir)
-    file_name = file_dir(i).name;
-    full_path = strcat(data_path, file_name);
-    disp(full_path);
-
+%for i = 1:length(file_dir)
+%    file_name = file_dir(i).name;
+ %   full_path = strcat(data_path, file_name);
+ %   disp(full_path);
+full_path = 'C:\Users\papad\Code\LinearSolver\MatrixMAT\Big\apache2.mat'
     % carico la matrice
     mat = load(full_path);
 
@@ -64,6 +64,6 @@ for i = 1:length(file_dir)
     fprintf(result_file,'%s,%s,%s,%g,%0.2f,%0.2f\n','MATLAB',system,file_name, err_rel, elapsed_time, memory);
     clear('A', 'R', 'b', 'x', 'xe', 'mat');
 
-end
+%end
 
 fclose(result_file);
